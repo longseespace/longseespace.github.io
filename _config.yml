@@ -69,5 +69,4 @@ theme: nomadreact
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: git@github.com:longseespace/nomadreact.git
-  branch: gh-page
+  repo: git@github.com:longseespace/longseespace.github.io.git
