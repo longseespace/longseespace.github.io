@@ -6,6 +6,9 @@ set -e # exit with nonzero exit code if anything fails
 cd public
 git init
 
+# add CNAME record
+echo "www.nomadreact.com" > CNAME
+
 # inside this git repo we'll pretend to be a new user
 git config user.name "Travis CI"
 git config user.email "travis@nomadreact.com"
