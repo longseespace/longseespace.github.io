@@ -2,23 +2,18 @@ sudo: false
 language: node_js
 node_js:
   - '6.2'
-
 env:
   global:
     - GH_REF: github.com/longseespace/longseespace.github.io.git
     - secure: >-
-        ERN8/DyVn/8NucFspWziTuBb4sqsX/WL8foAYLrQo0gxZ2ULA5Vewh4bTu3tbLhbjiTuur7Rf0+R/VMXT/TPP2e0KFOuN1vgvoGMKzgtLYZpEBoC2qaQzmmNjU52ASicODX203iyAJGDakOiixoatp2MKCoVAKrNtrV2JOBi4VvOZ+hQiBGtWn32y//NH32pmEIeTE8NrCJKtRcDEo1XjXPSWxXXswj44H5W53UBga//mBzjqUmkrbaqi83TkV6Jlth77vUji85JQJaYIVnlaYnrneuMZEHaqpP/eQ3X5E217YyP+RbWPHe4AQDmr84jtS24fUMpKIJypyNz5aHM9dZozuGFH2k4SOeZzoPWBHeKsQiGzfDyl0lxwFchPF39hTlpJ0iwNPT31z9drz1s0HUIpz85bMMxkYWF2UOBlEHtw4Wc6YPDHNM2KdE4NmrcEx5nPnAhrVa+gG7vEDANuSFtMZPoO4fhCXsvpFYG5zkPqStrsUqw9CxlFbstzDumkvMVkPxmItBO/wUij8HawyURrv9sOCGLXGhe/7KnIp61OfCKHe7QBPSIUT+JSUFUwetNyxDxsOcw81wpEf2gCdVWKe/cib1+b+/I4o6oB2WAlSLC/kWvfoTo5yf51Llpf0/dm2hxWNDn3alYjwFQQUPw/HLGdoe7oXWK7rCUAa0=
-
+        xnM50UhtOW0KIg9UdfhOGWhvInS7BHLlXGbQcI93d4yQMWzWzaCmyoZcD8ouwdIR7zWdJzFqwC4ep666IezAAOgn7VjKQxkEgGL/bM8BrmetXKFWiH5a1gvf0VuHs39EeQd/fJhUWD0fYDQvM41kqyUN/E9QJ+U3rxHCt8kFHWlYQS6uhsIly+pF+4g9cJbqz7RIuIU3Oxd/+bIAtf9zMnJfMpLmUdonMuqxM5DyEZo8bBE1eiMdUq+fjLJWAT9Yo0a+foMOy/7Bh4sh5tWoneMYq//eyrIr/PTMrDi6mJU+TAaO+K8MPck8eO+fRpmW+JTk/HiSujBTICxHW5MuYcNU6YJ6mnenplQpMHFwQFUH45yrAxSOmkmM7V9KVutGJLqqvXVU1IIS11uWsx6R/0jCmKXigFTwggLIsWIYoz4ObAFOfQ46TjoI8gtinfo9Oo1PRIYWukWf//MByvGacEklByRt7/mYRaJ1iTAPl52Bw98+GkMHchu+qU1Thj5k7Z57/Cz1exX9HRNCzKy5x11D41DdYfiieSopH02yDCmcWDe6N7UGSm8FwX6qbOiKOLbnPJw3oeae3BAzzn+lGEA/hDhWsYtz4Vziqd58At+7XJyv5/1rfRleSWFE75+whX94V/HSsloOEF3uuVwiyhjzJ+yTm8MnEYaCjwbVZlg=
 cache:
   directories:
     - node_modules
-
 install:
   - npm install
   - npm install -g hexo-cli
-
 script:
   - hexo generate
-
 after_success:
   - chmod +x ./deploy.sh && ./deploy.sh
